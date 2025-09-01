@@ -1,16 +1,22 @@
-/* layout styles */
+/* Base layout */
 body {
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer";
   grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto auto 1fr auto;
   min-height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
+/* Header */
 header {
-  grid-column: 1 / 3;
-  background: #aca6a6;
+  grid-area: header;
+  background: #6c6666;
   color: blue;
   padding: 1rem;
 }
@@ -19,13 +25,18 @@ header h1 {
   margin: 0;
 }
 
+/* Nav */
+nav {
+  grid-area: nav;
+}
+
 nav ul {
   display: flex;
   justify-content: space-around;
   background: #000;
   list-style: none;
-  padding: 0.5rem 0;
-  margin: 1rem 0 0;
+  padding: 0.75rem 0;
+  margin: 0;
 }
 
 nav ul li a {
@@ -34,24 +45,23 @@ nav ul li a {
   font-weight: bold;
 }
 
+/* Main */
 main {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-column: 1 / 3;
-}
-
-.main-content {
+  grid-area: main;
   background: #ccc;
   padding: 1rem;
 }
 
+/* Aside */
 aside {
-  background: #987c7c;
+  grid-area: aside;
+  background: lightblue;
   padding: 1rem;
 }
 
+/* Footer */
 footer {
-  grid-column: 1 / 3;
+  grid-area: footer;
   background: #333;
   color: white;
   text-align: center;
