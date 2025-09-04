@@ -1,5 +1,5 @@
 /* ==============================
-   Global Fonts & Base Styling
+   the page Fonts & Base Styling
    ============================== */
 body {
   font-family: 'Roboto', sans-serif;
@@ -49,12 +49,12 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #ffdd57;  /* Golden highlight */
-  color: #1f4a6b;            /* Dark text for contrast */
+  background-color: #ffdd57;  
+  color: #1f4a6b;            
 }
 
 /* ==============================
-   Main Layout
+   The Main Layout
    ============================== */
 main {
   max-width: 1000px;
