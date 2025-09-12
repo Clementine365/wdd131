@@ -1,0 +1,106 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #4a76a8;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+/* Hamburger button */
+#menu {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "✖"; /* close symbol */
+}
+
+/* Nav */
+.navigation {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: #333;
+}
+
+.navigation a {
+  display: none;
+  color: #fff;
+  padding: 0.75rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navigation a:hover,
+.navigation a.active {
+  background-color: #ddd;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Show links when menu open */
+.open a {
+  display: block;
+}
+
+/* Main content */
+main {
+  max-width: 90%;
+  margin: 1rem auto;
+}
+
+.temple-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* mobile one column */
+  gap: 1rem;
+}
+
+.temple-grid figure {
+  background: #fff;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.temple-grid img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #4a76a8;
+  color: #fff;
+  margin-top: 1rem;
+}
