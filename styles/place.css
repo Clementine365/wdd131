@@ -19,7 +19,7 @@ html, body {
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: 'Roboto', Arial, sans-serif;
   line-height: 1.6;
   color: #000;
   background-color: #f9f9f9;
