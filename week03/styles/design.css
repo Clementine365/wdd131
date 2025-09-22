@@ -1,0 +1,60 @@
+body {
+  font-family: Roboto, helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* Banner replaces marquee */
+.banner {
+  padding: 1rem;
+  background-color: #eee;
+  text-align: center;
+}
+
+/* Main heading */
+h1 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Two-column layout for main */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* h2 spans both columns and is left-aligned */
+main h2 {
+  grid-column: 1 / -1; /* Span both columns */
+  color: navy;
+  text-align: left; /* Fixed alignment */
+  margin-bottom: 1rem;
+}
+
+/* Justify article text */
+article p {
+  text-align: justify;
+}
+
+/* Callout box fixed contrast and padding */
+.callout {
+  color: #222; /* Dark text */
+  background-color: #e0e0e0; /* Light background */
+  padding: 1rem; /* Fixed padding */
+  border-radius: 5px;
+  grid-column: 1 / -1; /* Span both columns */
+}
+
+/* Footer moved to left */
+footer {
+  margin-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: smaller;
+  text-align: left; /* Move footer content to the left */
+}
