@@ -93,7 +93,7 @@ footer {
 }
 
 /* ======================
-   Medium Screens
+   The Medium Screens
 ====================== */
 @media (min-width: 600px) {
   main {
@@ -105,10 +105,10 @@ footer {
 }
 
 /* ======================
-   Large Screens
+   The Large Screens
 ====================== */
 @media (min-width: 1000px) {
-  /* Use hero-large.webp as full-page background */
+  /* Full-page background using large hero image */
   body {
     background: url('../images/hero-large.webp') no-repeat center center fixed;
     background-size: cover;

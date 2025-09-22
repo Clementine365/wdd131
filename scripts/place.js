@@ -1,6 +1,4 @@
-// ------------------------------
-// Footer: Current Year & Last Modified
-// ------------------------------
+
 const yearEl = document.getElementById("year");
 const lastModifiedEl = document.getElementById("last-modified");
 
@@ -10,15 +8,12 @@ if (lastModifiedEl) lastModifiedEl.textContent = document.lastModified;
 // ------------------------------
 // Static Weather Data for Netherlands
 // ------------------------------
-const temperature = 8; // °C (typical spring/winter value)
+const temperature = 8; // °C
 const windSpeed = 20;  // km/h
 
 /**
  * Calculate Wind Chill in Celsius
  * Formula: 13.12 + 0.6215*T - 11.37*V^0.16 + 0.3965*T*V^0.16
- * @param {number} temp - Temperature in °C
- * @param {number} wind - Wind speed in km/h
- * @returns {number} - Wind chill rounded to nearest integer
  */
 function calculateWindChill(temp, wind) {
   return Math.round(

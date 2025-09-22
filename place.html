@@ -1,36 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A responsive web page about the Netherlands">
-  <title>Discover The Netherlands</title>
+  <meta name="description" content="Learn about the Netherlands: culture, cities, landmarks, and current weather.">
+  <meta name="author" content="Clementine">
+  <title>Discover The Netherlands - Info Page</title>
   <link rel="stylesheet" href="styles/place.css">
   <script src="scripts/place.js" defer></script>
 </head>
 <body>
   
+  <!-- HEADER -->
   <header>
-    <h1> The Netherlands</h1>
+    <h1>Discover The Netherlands: Culture, Cities, and Landmarks</h1>
   </header>
 
-  
+  <!-- MAIN CONTENT -->
   <main>
-    <!-- HERO IMAGE (small/medium screens) -->
+    <!-- HERO IMAGE (hidden on large screens) -->
     <section class="hero">
       <picture>
-        <!-- Large image for screens 1000px and up -->
         <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
-        <!-- The  Medium image for screens 500px and up -->
         <source media="(min-width: 500px)" srcset="images/hero-medium.webp">
-        <!-- The Small image for smaller screens -->
         <img src="images/hero-small.webp"
              alt="Scenic view of the Netherlands"
              width="1500" height="750">
       </picture>
     </section>
 
-    
+    <!-- ABOUT NETHERLANDS -->
     <section class="info">
       <h2>About the Netherlands</h2>
       <p><strong>Country Name:</strong> The Netherlands (often called Holland)</p>
@@ -42,9 +42,9 @@
       <p><strong>Language:</strong> Dutch (English widely spoken)</p>
     </section>
 
-    
+    <!-- WEATHER BOX -->
     <section class="weather">
-      <h2>Current Weather <span class="weather-icon"></span></h2>
+      <h2>Current Weather <img src="images/weather.svg" alt="Weather icon"></h2>
       <p>Temperature: <span id="temp">8</span> °C</p>
       <p>Wind Speed: <span id="wind">20</span> km/h</p>
       <p>Wind Chill: <span id="windchill"></span></p>
@@ -53,7 +53,8 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; Clementine, Netherlands <span id="year"></span> | Last Modified: <span id="last-modified"></span></p
+    <p>&copy; Clementine, Netherlands <span id="year"></span> | Last Modified: <span id="last-modified"></span></p>
   </footer>
+
 </body>
 </html>
