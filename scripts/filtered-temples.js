@@ -14,7 +14,7 @@ hamButton.addEventListener("click", () => {
   hamButton.classList.toggle("open");
 });
 
-// Array of temple objects
+// Array of temple pictures and comments
 const temples = [
   { name: "Nairobi Kenya Temple", location: "Nairobi, Kenya", dedicated: "May 24, 2019", area: 23000, imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/nairobi-kenya-temple/nairobi-kenya-temple-60488.jpg" },
   { name: "The Hague Netherlands Temple", location: "The Hague, Netherlands", dedicated: "June 18, 2002", area: 9000, imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/the-hague-netherlands-temple/the-hague-netherlands-temple-5172.jpg" },
@@ -30,7 +30,7 @@ const temples = [
   { name: "London England Temple", location: "London, England", dedicated: "September 7, 1958", area: 8200, imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/london-england-temple/london-england-temple-61780.jpg" }
 ];
 
-// DOM references
+
 const templeGrid = document.querySelector('.temple-grid');
 const navLinks = document.querySelectorAll('.navigation a');
 
@@ -54,7 +54,7 @@ function displayTemples(templesToDisplay) {
     templeGrid.appendChild(figure);
   });
 
-  // IntersectionObserver
+  
   const options = { root: null, rootMargin: '0px', threshold: 0.1 };
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
@@ -71,10 +71,10 @@ function displayTemples(templesToDisplay) {
   imgs.forEach(img => observer.observe(img));
 }
 
-// Display all temples initially
+
 displayTemples(temples);
 
-// Filter functions
+// The Filter functions
 navLinks.forEach(link => {
   link.addEventListener('click', (e) => {
     e.preventDefault();
