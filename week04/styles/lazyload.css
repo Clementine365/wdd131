@@ -1,0 +1,49 @@
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+    height: 600px;
+    background-color: black; /* fallback while loading */
+    opacity: 0;
+}
+
+/* Fade-in animation */
+.fade {
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
