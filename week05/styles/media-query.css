@@ -1,0 +1,35 @@
+/* Base Styles - No Media Query */
+
+/* Apply Roboto font to whole document */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8; /* light neutral background */
+}
+
+/* Shared styles for header, main, and footer */
+header,
+main,
+footer {
+  max-width: 640px;
+  margin: 1rem auto;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #d8e9f7; /* soft blue */
+  box-sizing: border-box;
+}
+
+/* Main as a single-column grid */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* Sections */
+section {
+  padding: 1rem;
+  background-color: #ffffff; /* white for contrast */
+  border-radius: 0.5rem;
+}
